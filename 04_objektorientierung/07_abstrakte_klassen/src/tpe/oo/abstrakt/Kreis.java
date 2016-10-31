@@ -3,7 +3,7 @@ package tpe.oo.abstrakt;
 /**
  * Ein Kreis.
  */
-public class Kreis {
+public class Kreis  {
 
     /** Radius des Kreises. */
     private double radius;

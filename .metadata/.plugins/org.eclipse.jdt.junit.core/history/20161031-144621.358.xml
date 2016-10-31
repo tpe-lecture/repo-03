@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestAnalogController" project="08_interfaces" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="tpe.oo.interfaces.test.TestAnalogController" time="0.0">
+    <testcase name="testAnalogController" classname="tpe.oo.interfaces.test.TestAnalogController" time="0.0"/>
+    <testcase name="testDigitalController" classname="tpe.oo.interfaces.test.TestAnalogController" time="0.0"/>
+  </testsuite>
+</testrun>
