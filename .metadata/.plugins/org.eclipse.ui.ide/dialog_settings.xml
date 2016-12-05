@@ -5,6 +5,8 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\Anton\Desktop\Reversi"/>
+			<item value="C:\Users\Anton\Documents\GitHub\repo-03"/>
 			<item value="/home/a.berdux/TPE/repo-03"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">

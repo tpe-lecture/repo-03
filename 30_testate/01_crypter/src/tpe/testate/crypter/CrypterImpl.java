@@ -1,18 +1,30 @@
 package tpe.testate.crypter;
 
 public class CrypterImpl implements Crypter{
-
+   
+	/**
+     * invokes the crypt method to encrypt a string input
+     */
 	@Override
 	public String encrypt(String input) {
-		return crypt(input.toLowerCase());
+		return crypt(input.toLowerCase(),false);
 	}
-
+    /**
+     * invokes the crypt method to decrypt a string input
+     */
 	@Override
-	public String decrypt(String input) throws IllegalArgumentException {
-		return crypt(input);
+	public String decrypt(String input) {
+		return crypt(input,true);
 	}
-	
-	public String crypt(String input) throws IllegalArgumentException{
+	/**
+	 * The crypt method replaces certain characters in an input delivered to it, to either encrypt 
+	 * or decrypt it.
+	 * @param input   : the String variabale, that is either encrypted or decrypted
+	 * @param a       : boolean variable to decide if the method should thhrow the exception when encountering special characters
+	 * @return output : the en-/decrypted string
+	 * @throws IllegalArgumentException : throws an exception if an illegal character is used 
+	 */
+	public String crypt(String input,boolean a) throws IllegalArgumentException{
 		String output = "";
  		for (int i = 0; i < input.length(); i++) {
 			switch (input.charAt(i)) {
@@ -76,7 +88,10 @@ public class CrypterImpl implements Crypter{
 				output = output + input.charAt(i);
 				break;
             default:
+            	if(a){
             	throw new IllegalArgumentException();
+            	}
+            	else{output = output + input.charAt(i);}
 			}
 		}
 		return output;

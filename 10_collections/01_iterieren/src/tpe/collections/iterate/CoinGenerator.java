@@ -1,6 +1,8 @@
 package tpe.collections.iterate;
 
 import java.awt.Point;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Iterator;
 import java.util.Random;
 
@@ -40,6 +42,7 @@ public class CoinGenerator implements Iterable<Sprite> {
      * @return Der Iterator.
      */
     public Iterator<Sprite> iterator() {
+      
         return new Iterator<Sprite>() {
 
             int count = 0;
